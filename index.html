@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endless Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>Endless Runner</h1>
+    <button id="startBtn">▶️ Start Game</button>
+  </div>
+
+  <div id="game" style="display:none;">
+    <img id="player" src="assets/player.gif" alt="Player" />
+    <img id="obstacle" src="assets/obstacle.png" alt="Obstacle" />
+    <img id="coin" src="assets/coin.gif" alt="Coin" />
+    <button id="jumpBtn">⬆️</button>
+  </div>
+
+  <p id="score" style="display:none;">Score: 0</p>
+
+  <div id="gameOverScreen" style="display:none;">
+    <h2>Game Over!</h2>
+    <p id="finalScore">Your Score: 0</p>
+    <button id="retryBtn">🔁 Retry</button>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="jumpSound" src="assets/jump.mp3"></audio>
+  <audio id="coinSound" src="assets/coin.mp3"></audio>
+  <audio id="bgMusic" src="assets/bg-music.mp3" autoplay loop></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
